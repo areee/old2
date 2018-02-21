@@ -34,5 +34,3 @@ var txt2 = " klo ";
 
 document.write(txt1);
 document.write(muokattuPaivays());
-document.write(txt2);
-document.write(muokattuKlo());
