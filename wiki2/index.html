@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="2; URL=https://github.com/areee/ATV4.2/wiki/01-Uutiset" />
+<title>Uudelleenohjaussivu</title>
+</head>
+<body>
+
+<h1>Uudelleenohjaussivu</h1>
+<p>Tämä sivu uudelleenohjaa sinut ATV4-kurssin uutiswikiin...</p>
+<p id="ajastin"></p>
+<img src="kuvat/pyoriva_rinkula_2.gif">
+
+<script>
+    // Lähde: https://stackoverflow.com/a/20618592
+    time = 3,
+    ajastin = document.getElementById('ajastin'),
+    tmp = time;
+    setInterval(function(){
+        var c=tmp--, m=(c/60)>>0, s=(c-m*60)+'';
+        ajastin.textContent='Uudelleenohjaukseen '+m+':'+(s.length>1?'':'0')+s
+        tmp!=0||(tmp=time);
+    },1000);
+</script>
+
+</body>
+</html>
